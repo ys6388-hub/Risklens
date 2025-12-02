@@ -1,0 +1,21 @@
+<svg width="420" height="110" viewBox="0 0 420 110" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="proBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#76C7FF"/>
+      <stop offset="50%" stop-color="#1E78FF"/>
+      <stop offset="100%" stop-color="#0033A0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Centered Professional Title -->
+  <text x="50%" y="60%"
+        font-family="Poppins, Segoe UI, Arial, sans-serif"
+        font-size="48"
+        font-weight="800"
+        fill="url(#proBlue)"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        letter-spacing="-1px">
+      RiskLens
+  </text>
+</svg>
