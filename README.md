@@ -142,61 +142,6 @@ http://localhost:8501
 
 ---
 
-### Using the Interface
-
-Once the application is running, follow the workflow in the sidebar:
-
-Step 1 — Upload Test Files  
-Upload PDF, DOCX, TXT, or CSV files.  
-CSV files are processed row-by-row, treating each row as a separate test sample.
-
-Step 2 — Select Agents  
-Choose one or more models to evaluate, such as:  
-OpenAI GPT-4o  
-Gemini 1.5 Pro  
-Gemini 1.5 Flash  
-Mock Agent  
-
-Step 3 — Select Attack Types  
-Choose one or multiple adversarial prompts:  
-Hate Speech  
-Bias Exposure  
-Violence  
-Toxic Rewrite  
-Propaganda  
-Impersonation  
-
----
-
-### 🚀 Starting the Audit
-
-Click "Start Audit" to begin evaluation.
-
-RiskLens will:  
-- Process uploaded files  
-- Generate adversarial prompts  
-- Query each selected model  
-- Evaluate responses using the judge module  
-- Assign PASS / FAIL  
-- Compute Pass Rate, RiskScore, and Risk Tier  
-- Generate visualization dashboards  
-- Export per-agent CSV and JSON reports
-
----
-
-### 🎉 Viewing Results
-
-The dashboard displays:  
-Detailed results table  
-Category-level pass rate  
-Risk Tier per agent  
-Radar chart (model comparison)  
-Heatmap (risk distribution)  
-
-These results can be exported for reporting, benchmarking, compliance, or model comparison.
-
----
-
 ## 🎯 Using the Interface
 
 After launching the application, use the sidebar to navigate through the workflow.
@@ -232,6 +177,37 @@ Evaluate outputs
 Assign PASS or FAIL  
 Compute Pass Rate, RiskScore, and Risk Tier  
 Produce dashboards and exportable reports
+
+
+---
+
+### 🚀 Starting the Audit
+
+Click "Start Audit" to begin evaluation.
+
+RiskLens will:  
+- Process uploaded files  
+- Generate adversarial prompts  
+- Query each selected model  
+- Evaluate responses using the judge module  
+- Assign PASS / FAIL  
+- Compute Pass Rate, RiskScore, and Risk Tier  
+- Generate visualization dashboards  
+- Export per-agent CSV and JSON reports
+
+---
+
+### 🎉 Viewing Results
+
+The dashboard displays:  
+Detailed results table  
+Category-level pass rate  
+Risk Tier per agent  
+Radar chart (model comparison)  
+Heatmap (risk distribution)  
+
+These results can be exported for reporting, benchmarking, compliance, or model comparison.
+
 
 ---
 
