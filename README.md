@@ -318,21 +318,24 @@ Integration into governance workflows or reporting pipelines
 
 ## 📁 Project Structure
 
-Risklens/
-│
-├── app.py
-├── requirements.txt
-├── risklens_logo.svg
-├── README.md
-│
-├── src/
-│   ├── data_loader.py
-│   ├── interfaces.py
-│   ├── judge.py
-│   ├── target_adapter.py
-│
-└── results/
 
+## 📁 Project Structure
+
+```text
+Risklens/
+├── app.py                   # Streamlit UI & main orchestration
+├── requirements.txt         # Python dependencies
+├── risklens_logo.svg        # Project logo
+├── README.md                # Project documentation
+├── results/                 # Auto-generated CSV/JSON reports (per agent & attack type)
+├── src/
+│   ├── data_loader.py       # Ingestion of PDF/DOCX/TXT/CSV test files
+│   ├── interfaces.py        # BaseTargetAgent interface definition
+│   ├── judge.py             # LLM-based safety judge (PASS/FAIL + reasoning)
+│   └── target_adapter.py    # OpenAI / Gemini / Mock agent adapters
+└── .env                     # Local API keys (not committed to Git)
+
+``` 
 ---
 
 ## 🩺 Troubleshooting
@@ -358,3 +361,66 @@ Application fails to start
 Reinstall dependencies using: pip install -r requirements.txt  
 Make sure a compatible Python version (3.9+) is being used.
 
+---
+
+## 👥 Team Members
+
+| Name        | Role | Contributions |
+|-------------|------|---------------|
+| Yun Sun     | AI Safety Agent Development Lead | Implemented LLM agent integration, safety attack orchestration, multi-agent benchmarking |
+| Meijia Song | AI Safety Framework Lead | Developed AI Safety Framework, created evaluation criteria, aligned with UN ethical AI principles |
+| Tongkun Shi | AI Safety Interface & Evaluation Lead | Built Streamlit UI, visualization dashboards, radar charts, heatmaps, results export system |
+
+ ---
+
+## 🏛 UN Ethical AI Alignment
+
+RiskLens aligns with key principles from:
+- **UN System's Principles for the Ethical Use of AI**
+- **UNESCO AI Ethics Recommendation (2021)**
+- **EU AI Act Safety & Transparency Principles**
+- **NIST AI RMF (Risk Management Framework)**
+
+This prototype supports:
+- Transparency in safety evaluation  
+- Mitigation of harmful model behavior  
+- Responsible deployment of frontier models  
+- Safety auditing and red-teaming of LLM systems  
+
+
+---
+
+## 🔮 Future Work
+
+- Expand model integrations (Anthropic Claude, Llama, Mistral)
+- Add multilingual safety testing capabilities
+- Introduce adversarial prompt generation using LLM-based red teaming
+- Support batch evaluation pipelines and API endpoints
+- Deploy RiskLens as an online SaaS safety auditing tool
+- Implement continuous monitoring for model drift & behavior changes
+
+---
+
+## 📜 License
+This project is released under the **MIT License**.  
+Feel free to use, modify, and extend for research and educational purposes.
+
+---
+
+## 🙏 Acknowledgements
+
+We thank:
+- Dr. Andrés Fortino and Professor Jimmy Pang for guidance and feedback.
+- UNICC Team for providing project direction and ethical AI insights.
+- The NYU MSMA program for supporting this applied AI safety research project.
+
+---
+
+## 📫 Contact
+
+For questions or collaborations, please contact:
+
+- Yun Sun — ys6388@nyu.edu  
+- Meijia Song — ms15981@nyu.edu
+- Tongkun Shi — ts5515@nyu.edu
+- Project GitHub Issues — https://github.com/ys6388-hub/Risklens/issues
