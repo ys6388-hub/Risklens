@@ -291,8 +291,6 @@ Analysis of failure cases
 Integration into governance workflows or reporting pipelines
 
 ---
-git add README.md
-git commit -m "Update README with final project sections"
 
 ## 📁 Project Structure
 
